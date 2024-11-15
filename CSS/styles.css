@@ -1,0 +1,347 @@
+/* Resetando margens e padding para evitar barra de rolagem */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;  /* Garantir que o corpo ocupe toda a altura da tela */
+    overflow: hidden;  /* Impede a barra de rolagem */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Seção do Hero (introdução com foto e texto) */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;  /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap;
+    height: calc(100vh - 50px); /* Ajusta para a altura da tela, considerando o cabeçalho fixo */
+    background-color: #fff;
+    padding: 60px 20px 20px; /* Ajusta o padding para empurrar o conteúdo para cima */
+    margin-top: 50px; /* Espaçamento para o cabeçalho fixo */
+    overflow: hidden;  /* Remove qualquer excesso */
+}
+
+#hero .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#hero .text {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+#hero h4 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #555;
+}
+
+#hero p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Botão */
+#hero .button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    background-color: #007bff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#hero .button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para a imagem */
+#hero .image {
+    flex: 1;
+    text-align: center;
+}
+
+#hero .image img {
+    max-width: 350px;  /* Tamanho maior para a imagem */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+/* Animação para o texto dinâmico */
+#dynamic-text {
+    font-size: 1.2rem;
+    color: #007bff;
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #007bff;
+    width: 0; /* Inicialmente oculto */
+    animation: typing 3s steps(30) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Seção de Portfólio */
+#portfolio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+#portfolio-section .button {
+    font-size: 18px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#portfolio-section .button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Chamada para ação */
+#contato-chamada {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contato-chamada h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contato-chamada p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Chamada para ação */
+#contato-chamada {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contato-chamada h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contato-chamada p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o botão */
+#contato-chamada .button {
+    font-size: 18px;
+    padding: 15px 30px;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contato-chamada .button:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Seção de Portfólio */
+#portfolio-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#portfolio-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.project {
+    display: inline-block;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Seção de Chamada para Ação */
+#contato-chamada {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contato-chamada h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contato-chamada p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#contato-chamada .button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: #007bff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contato-chamada .button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #bbb;
+}

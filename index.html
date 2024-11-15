@@ -4,76 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Silva Sousa - Currículo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#freelancer">Freelancer</a></li>
-                <li><a href="#fe">Minha Fé</a></li>
+                <li><a href="index.html"></a></li>
+                <li><a href="sobre.html"></a></li>
+                <li><a href="habilidades.html"></a></li>
+                <li><a href="experiencia.html"></a></li>
+                <li><a href="freelancer.html"></a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="sobre">
-        <h1>Gabriel Silva Sousa</h1>
-        <p>Programador Backend | Católico</p>
-        <p>Sou um programador Backend com paixão por resolver problemas e criar soluções escaláveis. Tenho experiência em diversas tecnologias e estou sempre em busca de novos desafios. Além disso, sou católico e minha fé me guia em tudo o que faço.</p>
-    </section>
+    <main>
+        <section id="hero">
+            <div class="content">
+                <div class="text">
+                    <h1>Gabriel Silva Sousa</h1>
+                    <h4>Desenvolvedor Web Backend</h4>
+                    <p>Transformo ideias em soluções inteligentes. Especialista em tecnologias como Django e Node.js para criar sistemas eficientes e escaláveis.</p>
+                    <a href="portfolio.html" class="button">Veja Meu Portfólio</a>
+                </div>
+                <div class="image">
+                    <img src="Img/gaab.png" alt="Foto de Gabriel Silva Sousa">
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Desenvolvimento Backend (Node.js, Python, Java)</li>
-            <li>Bancos de Dados (MySQL, PostgreSQL, MongoDB)</li>
-            <li>APIs RESTful</li>
-            <li>DevOps (Docker, Kubernetes, CI/CD)</li>
-            <li>Git e Controle de Versão</li>
-        </ul>
-    </section>
-
-    <section id="experiencia">
-        <h2>Experiência</h2>
-        <ul>
-            <li><strong>Desenvolvedor Backend</strong> - Empresa XYZ (2022 - Atual)</li>
-            <li><strong>Estagiário de Desenvolvimento</strong> - Empresa ABC (2021 - 2022)</li>
-        </ul>
-    </section>
-
-    <section id="freelancer">
-        <h2>Projetos Freelancer</h2>
-        <p>Se você precisar de ajuda em algum projeto, posso ser seu parceiro! Veja alguns dos meus projetos abaixo:</p>
-        <ul>
-            <li><a href="#">Sistema de Gestão de Estoques</a></li>
-            <li><a href="#">API de Processamento de Pagamentos</a></li>
-        </ul>
-    </section>
-
-    <section id="fe">
-        <h2>Minha Fé</h2>
-        <p>Como católico, minha fé em Deus é o que guia minhas ações e decisões, tanto na vida pessoal quanto na profissional. Acredito que meu trabalho é uma forma de servir ao próximo e honrar a Deus.</p>
-    </section>
-
-    <footer>
-        <p>Contato: gabriel.silva@exemplo.com</p>
-        <button id="contactButton">Enviar Mensagem</button>
-    </footer>
-
-    <div id="contactForm" style="display:none;">
-        <h3>Formulário de Contato</h3>
-        <form id="formMessage">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required><br><br>
-            <label for="message">Mensagem:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>
