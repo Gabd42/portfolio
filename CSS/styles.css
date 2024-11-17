@@ -31,19 +31,26 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block; /* Mudei para inline-block para garantir o comportamento correto */
     margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
+    color: white; /* Cor inicial do texto */
     text-decoration: none;
     font-weight: bold;
+    display: inline-block; /* Garantir que o link seja tratado como bloco */
+    padding: 10px 20px; /* Adicionando padding para aumentar o tamanho clicável */
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav ul li a:hover {
     color: #007bff;
+    background-color: #fff; /* Adicionando fundo para o efeito hover */
 }
+
+/* Outros ajustes de estilo */
+
 
 /* Seção do Hero (introdução com foto e texto) */
 #hero {
@@ -344,4 +351,88 @@ footer {
 footer p {
     font-size: 1rem;
     color: #bbb;
+}
+
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 400px; /* Define uma altura fixa */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Garante que padding seja incluído no tamanho */
+}
+
+
+
+div.project {
+    cursor: pointer;
+}
+#portfolio-section .project a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Herda a cor do texto para o link */
+}
+
+#portfolio-section .project {
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    padding: 20px; /* Espaçamento interno para evitar que o conteúdo grude nas bordas */
+    background-color: #f9f9f9; /* Fundo claro para os cards */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacar o card */
+    height: auto; /* Deixa o card ajustável ao conteúdo */
+    min-height: 350px; /* Altura mínima para o card (ajustável conforme necessário) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribui o conteúdo de forma equilibrada */
+}
+
+#portfolio-section .project img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+}
+
+#portfolio-section .project h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333; /* Cor do título */
+}
+
+#portfolio-section .project p {
+    font-size: 1em;
+    color: #666; /* Cor para a descrição */
+    margin-bottom: 15px; /* Espaçamento abaixo da descrição */
+    flex-grow: 1; /* Faz o parágrafo crescer e ocupar o espaço restante */
+}
+
+#portfolio-section .project-btn {
+    background-color: #19e252; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px; /* Bordas arredondadas no botão */
+    margin-top: auto; /* Garante que o botão fique no final do card */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#portfolio-section .project-btn:hover {
+    background-color: #010101; /* Cor do fundo quando o mouse passa */
+    transform: translateY(-3px); /* Efeito de "levitação" */
+}
+
+#portfolio-section .project-btn:focus {
+    outline: none; /* Remove o contorno de foco */
 }
