@@ -159,3 +159,199 @@ nav ul li a:hover {
         width: 70%;
     }
 }
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 60px; /* Adicionando espaço para o cabeçalho fixo */
+}
+
+/* Cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo da seção de portfólio */
+#portfolio-section {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 80px; /* Ajustando para não cobrir o conteúdo pelo cabeçalho fixo */
+}
+
+#portfolio-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Layout de grid para os cards do portfólio */
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Efeito de hover */
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.project-btn a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.project-btn a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo de chamada para ação */
+#contato-chamada {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+#contato-chamada h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#contato-chamada p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#contato-chamada .button {
+    text-decoration: none;
+    background-color: white;
+    color: #007bff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#contato-chamada .button:hover {
+    background-color: #f1f1f1;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo responsivo para os cards e layout geral */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .project-btn a {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Responsividade para telas menores (celular) */
+@media screen and (max-width: 480px) {
+    #portfolio-section {
+        padding: 10px;
+    }
+
+    #portfolio-section h2 {
+        font-size: 22px;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .project h3 {
+        font-size: 16px;
+    }
+
+    .project p {
+        font-size: 12px;
+    }
+
+    #contato-chamada h2 {
+        font-size: 24px;
+    }
+
+    #contato-chamada p {
+        font-size: 14px;
+    }
+
+    #contato-chamada .button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
